@@ -1,0 +1,34 @@
+<div class="container mt-4">
+  <h2>Liste des Posts</h2>
+  <a routerLink="/new" class="btn btn-primary mb-3">Nouveau Post</a>
+
+  <div *ngFor="let post of posts" class="card mb-3">
+    <div class="card-body">
+      <h5 class="card-title">{{ post.author }}</h5>
+      <p class="card-text">{{ post.message }}</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <button
+            class="btn btn-sm btn-outline-primary"
+            (click)="likePost(post._id)"
+          >
+            {{ post.likers.length || 0 }}
+          </button>
+        </div>
+        <div>
+          <a
+            [routerLink]="['/edit', post._id]"
+            class="btn btn-sm btn-warning me-2"
+            >Éditer</a
+          >
+          <button class="btn btn-sm btn-danger" (click)="deletePost(post._id)">
+            Supprimer
+          </button>
+        </div>
+      </div>
+      <small class="text-muted" *ngIf="post.createdAt">
+        Créé le {{ post.createdAt | date : "dd/MM/yyyy HH:mm" }}
+      </small>
+    </div>
+  </div>
+</div>
