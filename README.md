@@ -15,7 +15,7 @@
 
 ### Frontend (Angular)
 
-- Angular 16+
+- Angular 17+
 - TypeScript
 - Bootstrap
 - Reactive Forms
@@ -69,8 +69,8 @@ bashCopyEdit📦 APP-JS-FULLSTACK
 ### 1️⃣ Cloner le projet
 
 ```
-bashCopyEditgit clone https://github.com/ton-utilisateur/ton-repository.git
-cd ton-repository
+clone https://github.com/amadoubassceri/my-mean-training
+cd my-mean-training
 ```
 
 ### 2️⃣ Configuration du backend
@@ -78,25 +78,22 @@ cd ton-repository
 Dans le dossier **backend**, installe les dépendances :
 
 ```
-bashCopyEditcd backend
 npm install
+npm install cors
 ```
 
 Crée un fichier **.env** et ajoute les variables suivantes :
 
 ```
-iniCopyEditMONGO_URI=ton_url_mongodb
+MONGO_URI=ton_url_mongodb
 PORT=5000
 ```
 
 Démarre le serveur :
 
 ```
-bash
-
-
-CopyEdit
 npm start
+ npm run server
 ```
 
 ### 3️⃣ Configuration du frontend
@@ -104,17 +101,13 @@ npm start
 Dans le dossier **frontend**, installe les dépendances :
 
 ```
-bashCopyEditcd ../frontend
+../frontend
 npm install
 ```
 
 Démarre l’application Angular :
 
 ```
-bash
-
-
-CopyEdit
 ng serve
 ```
 
@@ -145,8 +138,8 @@ Ouvre **http://localhost:4200** dans ton navigateur 🚀
 
 ## 👨‍💻 Auteur
 
-👤 **Ton Nom**
-🔗 [LinkedIn](https://www.linkedin.com/in/ton-profil)
-📧 tonemail@example.com
+👤 **Amadou BASS**
+🔗 [LinkedIn](https://www.linkedin.com/in/bass-amadou-65902419a/)
+📧 bassamadou39@gmail.com
 
 Si ce projet t’a été utile, n’hésite pas à **l’étoiler ⭐ sur GitHub** et à contribuer ! 🚀
