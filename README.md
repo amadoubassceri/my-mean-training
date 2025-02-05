@@ -93,7 +93,7 @@ Démarre le serveur :
 
 ```
 npm start
- npm run server
+npm run server
 ```
 
 ### 3️⃣ Configuration du frontend
